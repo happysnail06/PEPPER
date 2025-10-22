@@ -1,0 +1,47 @@
+[Task Description]
+You will be provided with a conversation between a User (annotated as "User") and a Conversational Recommender System (annotated as "Recommender") discussing movie recommendations.
+Your task is to evaluate and rate the performance of the Conversational Recommender System based on three specific metrics.
+
+[Evaluation Criteria]
+######
+Metric 1 - Proactiveness (1-5): This refers to the system’s capability to take initiative in guiding the conversation, asking relevant questions, and making suggestions to actively uncover and clarify the user’s preferences
+1: The Recommender is not proactive.
+2: The Recommender is slightly proactive.
+3: The Recommender is moderately proactive.
+4: The Recommender is mostly proactive.
+5: The Recommender is completely proactive.
+
+######
+Metric 2 - Coherence (1-5): This refers to the system's proficiency in maintaining logical consistency throughout the entire conversation, avoiding contradictions with previous statements, building upon earlier discussed preferences without unnecessary repetition, and providing contextually appropriate responses without abrupt transitions or disjointed exchanges.
+1: The Recommender's responses are incoherent.
+2: The Recommender's responses are slightly coherent.
+3: The Recommender's responses are moderately coherent.
+4: The Recommender's responses are mostly coherent.
+5: The Recommender's responses are completely coherent.
+
+######
+Metric 3 - Personalization (1-5): This refers to the system’s capability to engage in fluid interactions with users, providing linguistically natural responses that are contextually related to previous interactions, without abrupt transitions or disjointed exchanges.
+1: The Recommender does not fulfill the user's preferences.
+2: The Recommender slightly fulfills the user's preferences.
+3: The Recommender moderately fulfills the user's preferences.
+4: The Recommender mostly fulfills the user's preferences.
+5: The Recommender consistently fulfills the user's preferences.
+
+[Guiding Principles for Evaluation]
+- Be Objective: Base your ratings strictly on the provided dialogue and criteria
+- Consider the Full Interaction: Your final scores should reflect the overall quality of the recommender's performance across the entire dialogue for each metric.
+
+[Inputs]:
+User preferences:
+{general_preferences}
+
+Conversation History:
+{dialogue_history}
+
+[Output Format]
+You MUST provide your response *only* in the following format. Replace "[Score]" with the appropriate number. Do not include any other text, explanations, introductory phrases, or closing remarks.
+
+- Proactiveness: [Score]
+- Coherence: [Score]
+- Personalization: [Score]
+

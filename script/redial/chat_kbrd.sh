@@ -1,0 +1,27 @@
+python src/chat/chat_kbrd.py \
+    --api_key "your api key" \
+    --crs_model kbrd \
+    --dataset redial_eval \
+    --kg_dataset redial \
+    --hidden_size 128 \
+    --entity_hidden_size 128 \
+    --num_bases 8  \
+    --context_max_length 200 \
+    --entity_max_length 32 \
+    --rec_model utils/model/kbrd_rec_redial/ \
+    --conv_model utils/model/kbrd_conv_redial/ \
+    --tokenizer_path facebook/bart-base \
+    --encoder_layers 2 \
+    --decoder_layers 2 \
+    --attn_head 2 \
+    --text_hidden_size 300 \
+    --resp_max_length 128 \
+    --user_data_path dataset/user_data/_ready/redial_user_10_500.json  \
+    --user_model gpt-4o-mini \
+    --utterance_prompt_path prompts/user_simulator_prompt.txt \
+    --reflection_prompt_path prompts/reflection_generation_prompt.txt \
+    --user_temperature 0 \
+    --max_tokens 300 \
+    --turn_num 20 \
+    --core_num 10 \
+    --num_samples 500

@@ -1,0 +1,23 @@
+CUDA_VISIBLE_DEVICES=0 python  src/chat/chat_unicrs.py \
+    --api_key "your api key" \
+    --crs_model unicrs \
+    --dataset opendialkg_eval \
+    --kg_dataset opendialkg \
+    --model microsoft/DialoGPT-small \
+    --rec_model utils/model/unicrs_rec_opendialkg/ \
+    --conv_model utils/model/unicrs_conv_opendialkg/ \
+    --context_max_length 128 \
+    --entity_max_length 43 \
+    --tokenizer_path microsoft/DialoGPT-small \
+    --text_tokenizer_path roberta-base \
+    --resp_max_length 128 \
+    --text_encoder roberta-base \
+    --user_data_path dataset/user_data/_ready/opendialkg_user_10_500.json   \
+    --user_model gpt-4o-mini \
+    --utterance_prompt_path prompts/user_simulator_prompt.txt \
+    --reflection_prompt_path prompts/reflection_generation_prompt.txt \
+    --user_temperature 0 \
+    --max_tokens 300 \
+    --turn_num 20 \
+    --core_num 10 \
+    --num_samples 500

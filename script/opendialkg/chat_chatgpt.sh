@@ -1,0 +1,15 @@
+python src/chat/chat_chatgpt.py \
+    --api_key "your api key" \
+    --crs_model chatgpt \
+    --dataset opendialkg_eval \
+    --kg_dataset opendialkg \
+    --max_tokens 256 \
+    --user_data_path dataset/user_data/_ready/opendialkg_user_10_500.json \
+    --user_model gpt-4o-mini \
+    --utterance_prompt_path prompts/user_simulator_prompt.txt \
+    --reflection_prompt_path prompts/reflection_generation_prompt.txt \
+    --user_temperature 0 \
+    --max_tokens 300 \
+    --turn_num 20 \
+    --core_num 10 \
+    --num_samples 500

@@ -1,0 +1,34 @@
+You are a preference summarizer tasked with extracting key preferences from user profiles. You will receive four types of user information:
+1. Movies Watched: Titles of the movies the user has watched.
+2. Genres Watched: Genres of the movies the user has watched.
+3. Likes: Aspects the user likes about the movies.
+4. Dislikes: Aspects the user dislikes about the movies.
+
+###Your Task###
+Analyze and Summarize the user's GENERAL preferences by focusing on the most important and representative features.
+
+###Important Points###
+- Keep your words clear and concise, do not repeat the same preferences.
+- Avoid simply listing preferences; create a descriptive narrative.
+- Use the second person perspective to describe the user.
+
+###Instructions###
+1. Identify and describe what the user generally likes.
+2. Identify and describe what the user generally dislikes.
+
+###Rules###
+- Do not mention phrases like "Based on~".
+- Do not provide explanations or reasons for the user's preferences.
+
+Movies Watched:
+{seen_movies}
+
+Genres Watched:
+{seen_genres}
+
+Likes:
+{likes}
+
+Dislikes:
+{dislikes}
+

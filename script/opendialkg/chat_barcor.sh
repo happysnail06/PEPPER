@@ -1,0 +1,19 @@
+python src/chat/chat_barcor.py \
+    --api_key "your api key" \
+    --crs_model barcor \
+    --dataset opendialkg_eval \
+    --kg_dataset opendialkg \
+    --context_max_length 512 \
+    --rec_model utils/model/barcor_rec_opendialkg/ \
+    --conv_model utils/model/barcor_conv_opendialkg/ \
+    --tokenizer_path facebook/bart-base \
+    --resp_max_length 128 \
+    --user_data_path dataset/user_data/_ready/opendialkg_user_10_500.json  \
+    --user_model gpt-4o-mini \
+    --utterance_prompt_path prompts/user_simulator_prompt.txt \
+    --reflection_prompt_path prompts/reflection_generation_prompt.txt \
+    --user_temperature 0 \
+    --max_tokens 300 \
+    --turn_num 20 \
+    --core_num 10 \
+    --num_samples 500

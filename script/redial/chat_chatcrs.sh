@@ -1,0 +1,15 @@
+python src/chat/chat_chatcrs.py \
+    --api_key "your api key" \
+    --crs_model chatcrs \
+    --dataset redial_eval \
+    --kg_dataset redial \
+    --max_tokens 256 \
+    --user_model gpt-4o-mini \
+    --utterance_prompt_path prompts/user_simulator_prompt.txt \
+    --reflection_prompt_path prompts/reflection_generation_prompt.txt \
+    --user_temperature 0 \
+    --user_data_path dataset/user_data/_ready/redial_user_10_500.json \
+    --max_tokens 300 \
+    --core_num 10 \
+    --turn_num 20 \
+    --num_samples 500

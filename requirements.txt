@@ -1,0 +1,17 @@
+openai
+accelerate
+tenacity
+transformers==4.28.1
+loguru
+thefuzz
+scikit-learn
+nltk
+tiktoken
+torch_geometric
+pandas
+langchain
+langchain-community
+langchain-core
+faiss-cpu==1.7.4
+asyncio
+aiofiles
