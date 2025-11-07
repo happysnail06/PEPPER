@@ -12,8 +12,8 @@ Use Git to clone the project repository to your local machine.
    ```
 2. **Download Models**
 - Download fine-tuned CRS models from the [model_link](https://drive.google.com/drive/folders/1h2AcRn3cd9qXToM9hFAXFV5evXJM-wyD?usp=sharing). Please put the downloaded model in crs/utils/model directory. We follow prior research for detailed descriptions. [This Git Repository](https://github.com/RUCAIBox/iEvaLM-CRS/tree/main?tab=readme-ov-file) 
-- Download "crs_data" from this [crs_data_link](https://drive.google.com/file/d/1PUx4VCI7TBNvLGIVx5h5Xnk21oUp760c/view?usp=share_link) and place the folder in the root directory.
-- Download "user_data_IMDB.json" from this [user_IMDB_link](https://drive.google.com/file/d/1Jry69sSj0DVvo6haST4OzNain44xamcO/view?usp=share_link) and place the file in dataset/user_data directory.
+- Download "crs_data" from this [crs_data_link](https://drive.google.com/file/d/1WpLeScN8Vgg_25OkY3iEgnjcfxLgFsVh/view?usp=share_link) and place the folder in the root directory.
+- Download "user_data_IMDB.json" from this [user_IMDB_link](https://drive.google.com/file/d/1r6ZzuCWJfkg6H0s0Q6oFxYW8SxNNUTP7/view?usp=sharing) and place the file in dataset/user_data directory.
 
 3. **Set Openai Key** in your local environment.
 
